@@ -137,3 +137,30 @@ VMs use disks to store OS, apps, and data
 ### - Reserved Instance
   - Discounted rate for reservation for multiple years
   - Shared across different sizes of VMs in flexibility group
+
+# VM Scale Set
+- A number of identical VMs can automatically increase or decrease in response to demand or a defined schedule
+- Do NOT provide load balancing
+- Scaling
+  - Scaling policy - Min & Max instance number and CPU threshold
+  - Scaling-In policy
+- Deployment
+  - Availability zone
+  - Proximity placement group
+  - Azure Spot Instance
+- Limits
+  - Max 100 VMs per scale set
+  - 2000 scale sets per region per subscription
+
+# Dedicated Host
+- A physical server in data center dedicated only to you
+- Can host multiple VMs of different sizes, but same size series
+- Charged for the entire host
+- High Availability
+  - Availability zone
+  - Fault domain
+
+# Condifential Compute
+- Confidential Computing VM
+- VM sizes:  DC1s_v2, DC2s_v2, DC4s_V2, and DC8_v2
+- Install the Open Enclave SDK (OE SDK)
