@@ -72,7 +72,6 @@ VMs use disks to store OS, apps, and data
 - Azure resource - supports RBAC, SAS
 
 ### Disk Encryption
-![image](https://user-images.githubusercontent.com/28542935/89816856-43696c00-db15-11ea-88ba-8a234b2f6914.png)
 - Storage level encryption
   - Microsoft managed key by default
   - BYOK
@@ -88,3 +87,4 @@ VMs use disks to store OS, apps, and data
   - Backup VMs are also encrypted
   - Powershell cmdlet: Set-AzureRmVMDiskEncryptionExtension
   - Reboot the VM and take 15 mins
+![image](https://user-images.githubusercontent.com/28542935/89816856-43696c00-db15-11ea-88ba-8a234b2f6914.png)
