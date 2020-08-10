@@ -88,3 +88,52 @@ VMs use disks to store OS, apps, and data
   - Powershell cmdlet: Set-AzureRmVMDiskEncryptionExtension
   - Reboot the VM and take 15 mins
 ![image](https://user-images.githubusercontent.com/28542935/89816856-43696c00-db15-11ea-88ba-8a234b2f6914.png)
+
+## Networking
+- A VM must live inside a VNet 
+- Inbound port rules
+  - By default, access to the virtual machine is restricted to sources in the same virtual network, and traffic from Azure load balancing solutions. 
+  - network interface card (NIC): not recommended, network security should be managed by NSG in the associated subnet
+  
+## High Availability
+- Can't change after VM is created
+- Do NOT provide load balancing
+### - Availability Set
+  - A logical group of discrete VMs
+  - Each VM can have its own properties (name, IP, size, …)
+  - Spread across Fault domains (1-3) and Update domain (1-20)
+  - Free 
+### - Availability Zone
+  - Available in few regions: Central US
+  - 3 separate physical datacenters in the region
+- SLAs
+  - Single instance with premium storage for all operating disks and data disks: 99.9%
+  - 2 or more instances in same Availability Set: 99.95%
+  - 2 or more instances in 2 or more Availability Zones: 99.99%
+  
+## Proximity Placement Group
+- A proximity placement group is a logical grouping used to make sure that Azure compute resources are physically located close to each other
+- useful for workloads where low latency is a requirement
+
+## Monitor
+- Diagnostic Settings: enable guest-level monitoring
+  - Collect data for counters: CPU, memory, disk, network, (ASP.NET, SQL Server)
+  - Event logs: IIS, .NET
+  - Stored in storage account with retention periods configurable
+- Metrics: automatically collected
+
+## Operations
+- Stop: OS is shut down (charge doesn't stop)
+- Allocation: VM is deployed to a node
+- Deallocation: VM is not deployed to a node
+- Patching - Update Management
+- Anti-malware
+- Backup 
+
+## Cost Saving
+### - Azure Spot Instance
+  - Discounted rate for spare VMs in Azure
+  - Will get evicted (stopped/deallocated) if the VMs are needed
+### - Reserved Instance
+  - Discounted rate for reservation for multiple years
+  - Shared across different sizes of VMs in flexibility group
