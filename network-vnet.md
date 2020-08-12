@@ -108,60 +108,60 @@
 
 
 ## Service Endpoint
-	- Enable subnets within a VNet to be identifiable to an Azure service
-	- Access to an instance of the Azure service can be locked down to the subnets
-	- Traffic via MSFT backbone
-	- Configuration
-		- Enable service endpoints for specific Azure services for the subnet
-		- Restrict the Azure service access from public internet to the subnet
+- Enable subnets within a VNet to be identifiable to an Azure service
+- Access to an instance of the Azure service can be locked down to the subnets
+- Traffic via MSFT backbone
+- Configuration
+	- Enable service endpoints for specific Azure services for the subnet
+	- Restrict the Azure service access from public internet to the subnet
 
 
 ## VNet Peering
-	- Enable resources under different virtual networks communicate with each other
-	- Not over Internet
-	- Global VNet Peering: between regions via Microsoft Backbone
-	- VNet Peering isn't transitive: A - B - C doesn't mean A - C
-	- Configurations
-		- Access: One-way vs two-way
-		- Forwarded traffic
-		- Gateway transit: to use VPN gateway in peered VNet 
-	- Not limited by regions
-	- Expensive
-		- Within region: $0.01 per GB both directions
-		- Between regions: egress traffic charges
-	- Performant
-	- Limits: 500 peerings per VNet
+- Enable resources under different virtual networks communicate with each other
+- Not over Internet
+- Global VNet Peering: between regions via Microsoft Backbone
+- VNet Peering isn't transitive: A - B - C doesn't mean A - C
+- Configurations
+	- Access: One-way vs two-way
+	- Forwarded traffic
+	- Gateway transit: to use VPN gateway in peered VNet 
+- Not limited by regions
+- Expensive
+	- Within region: $0.01 per GB both directions
+	- Between regions: egress traffic charges
+- Performant
+- Limits: 500 peerings per VNet
 
 
 ## VNet-to-VNet Gateway
-	- 
-	- Cheaper option than Vnet Peering: free inbound
-	- Traffic over Internet
-	- Require a VPN Gateway as a device for each VNet
-	- The gateway uses specific subnet called the gateway subnet in each Vnet
-	- No NSG should be associated with the gateway subnets
-	- Each gateway requires a public IP address (dynamic)
-	- Each gateway can create multiple connections
-	- Connection is transitive
+- ![image](https://user-images.githubusercontent.com/28542935/89816913-567c3c00-db15-11ea-8a16-f47a33d45d4e.png)
+- Cheaper option than Vnet Peering: free inbound
+- Traffic over Internet
+- Require a VPN Gateway as a device for each VNet
+- The gateway uses specific subnet called the gateway subnet in each Vnet
+- No NSG should be associated with the gateway subnets
+- Each gateway requires a public IP address (dynamic)
+- Each gateway can create multiple connections
+- Connection is transitive
 
 
 ## Azure Private Endpoint
-	- a network interface that connects you privately and securely to a service powered by Azure Private Link
-	- Private Endpoint uses a private IP address from your VNet, effectively bringing the service into your Vnet
-	- Private Endpoint can share same subnet with Service Endpoint
-	- Services (Storage account, Cosmos DB) and Private link service
+- a network interface that connects you privately and securely to a service powered by Azure Private Link
+- Private Endpoint uses a private IP address from your VNet, effectively bringing the service into your Vnet
+- Private Endpoint can share same subnet with Service Endpoint
+- Services (Storage account, Cosmos DB) and Private link service
 
 
 ## Azure Private Link
-	- Enables multi-tenant PaaS service to have an IP in VNet representing service instance
-	- The service communicates via IP Address from the Vnet
-	- Services that support Private Link
-		- Azure SQL
-		- Azure storage
-		- Cosmos DB
-		- Key Vault
-		- App Service
-		- ……
+- Enables multi-tenant PaaS service to have an IP in VNet representing service instance
+- The service communicates via IP Address from the Vnet
+- Services that support Private Link
+	- Azure SQL
+	- Azure storage
+	- Cosmos DB
+	- Key Vault
+	- App Service
+	- ……
 
 
 
