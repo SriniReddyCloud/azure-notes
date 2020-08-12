@@ -12,27 +12,27 @@
 - creates and manages a pool of compute nodes (virtual machines), installs the applications you want to run, and schedules jobs to run on the nodes
 - There is no additional charge for using Batch. You only pay for the underlying resources consumed
 - Use cases
-  ○ Intrinsically parallel workloads
+  - Intrinsically parallel workloads
     - applications can run independently, and each instance completes part of the work
     - When the applications are executing, they might access some common data, but they do not communicate with other instances of the application
     - Examples:
-      ○ Financial risk modeling using Monte Carlo simulations
-      ○ VFX and 3D image rendering
-      ○ Image analysis and processing
-      ○ Media transcoding
-      ○ Genetic sequence analysis
-      ○ Optical character recognition (OCR)
-      ○ Data ingestion, processing, and ETL operations
-      ○ Software test execution
-  ○ Tightly coupled workloads
+      - Financial risk modeling using Monte Carlo simulations
+      - VFX and 3D image rendering
+      - Image analysis and processing
+      - Media transcoding
+      - Genetic sequence analysis
+      - Optical character recognition (OCR)
+      - Data ingestion, processing, and ETL operations
+      - Software test execution
+  - Tightly coupled workloads
     - these are workloads where the applications you run need to communicate with each other, as opposed to run independently. 
     - Tightly coupled applications normally use the Message Passing Interface (MPI) API.
     - Examples
-      ○ Finite element analysis
-      ○ Fluid dynamics
-      ○ Multi-node AI training
-  ○ Large-scale rendering workloads
-  ○ Execution of R algorithms 
+      - Finite element analysis
+      - Fluid dynamics
+      - Multi-node AI training
+  - Large-scale rendering workloads
+  - Execution of R algorithms 
 - ![image](https://user-images.githubusercontent.com/28542935/89816896-50865b00-db15-11ea-8e85-23b264c2f491.png)
 
 
