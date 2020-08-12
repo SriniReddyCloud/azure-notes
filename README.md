@@ -1,4 +1,4 @@
-# azure-notes
+# azure notes for AZ-300 and AZ-301
 - Computing
   - [Overview](https://github.com/hwang74/azure-notes/blob/master/compute-overview.md)
   - [Virtual Machine](https://github.com/hwang74/azure-notes/blob/master/compute-vm.md)
