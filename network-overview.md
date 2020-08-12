@@ -6,21 +6,21 @@ The name of a resource indicates what we seek, an address indicates where it
 2. Data link (MAC)
 3. Network (IP)
 4. Transport (TCP/UDP)
-  - Transmission Control Protocol / Internet Protocol (TCP/IP)
-    - Bigger packet
-    - Connection needs to be set up first (3 handshakes)
-    - In-order delivery
-    - Congestion control
-    - Error detection
-    - I would tell you a funny TCP joke. Did you get it? Did you get it? Did you get it?
-  - User Datagram Protocol (UDP) 
-    - Smaller packet
-    - No connection needed
-    - More control over when data is sent
-    - Primitive error detection
-    - No in-order delivery
-    - No congestion control
-    - No compensation for lost packets (I would tell you a funny UDP joke but you may not get it)
+   - Transmission Control Protocol / Internet Protocol (TCP/IP)
+     - Bigger packet
+     - Connection needs to be set up first (3 handshakes)
+     - In-order delivery
+     - Congestion control
+     - Error detection
+     - I would tell you a funny TCP joke. Did you get it? Did you get it? Did you get it?
+   - User Datagram Protocol (UDP) 
+     - Smaller packet
+     - No connection needed
+     - More control over when data is sent
+     - Primitive error detection
+     - No in-order delivery
+     - No congestion control
+     - No compensation for lost packets (I would tell you a funny UDP joke but you may not get it)
 5. Session
 6. Presentation
 7. Application (https)
