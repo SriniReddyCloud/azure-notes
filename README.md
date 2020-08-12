@@ -1,1 +1,15 @@
 # azure-notes
+- Computing
+  - [Overview](https://github.com/hwang74/azure-notes/blob/master/compute-overview.md)
+  - [Virtual Machine](https://github.com/hwang74/azure-notes/blob/master/compute-vm.md)
+  - [Container](https://github.com/hwang74/azure-notes/blob/master/compute-container.md)
+  - [App Service](https://github.com/hwang74/azure-notes/blob/master/compute-app-service.md)
+  - [Serverless](https://github.com/hwang74/azure-notes/blob/master/compute-serverless.md)
+  - [Big Compute](https://github.com/hwang74/azure-notes/blob/master/compute-hpc.md)
+- Networking
+  - [Overview](https://github.com/hwang74/azure-notes/blob/master/network-overview.md)
+  - [Virtual Network](https://github.com/hwang74/azure-notes/blob/master/network-vnet.md)
+  - [VPN Gateway](https://github.com/hwang74/azure-notes/blob/master/network-vpn-gateway.md)
+  - [Hub-Spoke](https://github.com/hwang74/azure-notes/blob/master/network-hub-spoke.md)
+  - [Load Balancing](https://github.com/hwang74/azure-notes/blob/master/network-lb.md)
+  - [Other Services](https://github.com/hwang74/azure-notes/blob/master/network-other.md)
