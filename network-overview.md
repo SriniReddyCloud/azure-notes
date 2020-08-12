@@ -25,25 +25,21 @@ The name of a resource indicates what we seek, an address indicates where it
 6. Presentation
 7. Application (https)
 
-
-
-
 # The Internet
-- The Internet is a network of networks; it’s broken up into hundreds of thousands of smaller networks known as autonomous systems (AS)
-- Autonomous System (AS)
+The Internet is a network of networks; it’s broken up into hundreds of thousands of smaller networks known as autonomous systems (AS)
+## Autonomous System (AS)
   - An AS can be an Internet Service Providers, universities, government agencies, large corporate networks, including multiple locations (IP addresses). 
   - Each AS is represented by a unique number called an ASN
     - Internet Assigned Numbers Authority (IANA) assigns ASNs to Regional Internet Registries (RIRs), which then assigns them to ISPs and networks
     - About 64,000 ASNs in-use worldwide
   - Each AS controls a collection of connected routing prefixes, representing a range of IP addresses
-- Boarder Gateway Protocol (BGP)
+## Boarder Gateway Protocol (BGP)
   - BGP is a routing protocol  to exchange routing and reachability information between AS
   - Each AS connects to neighboring AS’s with a TCP/IP connection for the purpose of sharing routing information.
   - BGP determines the best route based on a number of factors (speed, location, cost, business relations, …)
   - Route-sharing function of BGP relies on trust, and autonomous systems implicitly trust the routes that are shared with them.
 
-
-- IP Address
+## IP Address
 - Public IP - Internal routable IP address range
   - Prefix
   - Assignments
